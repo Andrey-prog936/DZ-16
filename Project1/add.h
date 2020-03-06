@@ -14,6 +14,6 @@ void addP(string name, string des, string day, string time, string vash)
 	cin >> day;
 	cout << "Enter time: ";
 	cin >> time;
-	cout << "Enter importance: ";
+	cout << "Enter importance (1-3): ";
 	cin >> vash;
 }

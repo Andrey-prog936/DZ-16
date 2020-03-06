@@ -42,6 +42,7 @@ int main()
 		case 2:
 		{
 			Show(name, des, day, time, vash);
+			cout << endl;
 		}
 		break;
 		case 3:

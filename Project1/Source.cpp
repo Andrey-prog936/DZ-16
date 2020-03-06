@@ -13,7 +13,6 @@ HANDLE colr = GetStdHandle(STD_OUTPUT_HANDLE);
 #define red SetConsoleTextAttribute(colr,FOREGROUND_RED);
 int main()
 {
-	
 	int a = 0;
 	do
 	{

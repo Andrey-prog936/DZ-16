@@ -2,8 +2,8 @@
 #include <string>
 #include <windows.h>
 #include <ctime>
-#include "add.h"
-#include "show.h"
+#include "function.h"
+
 
 using namespace std;
 HANDLE colr = GetStdHandle(STD_OUTPUT_HANDLE);
@@ -11,22 +11,23 @@ HANDLE colr = GetStdHandle(STD_OUTPUT_HANDLE);
 #define green SetConsoleTextAttribute(colr,FOREGROUND_GREEN);
 #define orange SetConsoleTextAttribute(colr,FOREGROUND_GREEN | FOREGROUND_RED);
 #define red SetConsoleTextAttribute(colr,FOREGROUND_RED);
+string name;
+string des;
+string day;
+string timee;
+string vash;
 int main()
 {
+	
 	int a = 0;
 	do
 	{
-		string name;
-		string des;
-		string day;
-		string time;
-		string exp;
-		string vash;
+		
 		cout << "\tMenu" << endl;
 		cout << "1 - Add podia" << endl; 
 		cout << "2 - Show podii" << endl;
 		cout << "3 - FULL Exit ";
-		SetConsoleTextAttribute(colr, FOREGROUND_RED);
+		red
 		cout << "<-(WARNING)->" << endl;
 		DefCol
 		////////////////////////////
@@ -35,12 +36,12 @@ int main()
 		{
 		case 1:
 		{
-			addP(name, des, day, time, vash);
+			addP(name, des, day, timee, vash);
 		}
 		break;
 		case 2:
 		{
-			Show(name, des, day, time, vash);
+			Show(name, des, day, timee, vash);
 			cout << endl;
 		}
 		break;

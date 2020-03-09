@@ -4,21 +4,17 @@
 #include <ctime>
 #include "function.h"
 
-
 using namespace std;
 HANDLE colr = GetStdHandle(STD_OUTPUT_HANDLE);
 #define DefCol SetConsoleTextAttribute(colr, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED);
 #define green SetConsoleTextAttribute(colr,FOREGROUND_GREEN);
 #define orange SetConsoleTextAttribute(colr,FOREGROUND_GREEN | FOREGROUND_RED);
 #define red SetConsoleTextAttribute(colr,FOREGROUND_RED);
-string name;
-string des;
-string day;
-string timee;
-string vash;
+
 int main()
 {
-	
+	podia zap;
+
 	int a = 0;
 	do
 	{
@@ -36,12 +32,12 @@ int main()
 		{
 		case 1:
 		{
-			addP(name, des, day, timee, vash);
+			addP(zap);
 		}
 		break;
 		case 2:
 		{
-			Show(name, des, day, timee, vash);
+			Show(zap);
 			cout << endl;
 		}
 		break;
@@ -60,8 +56,6 @@ int main()
 
 		}
 	} while (true);
-
-
 
 
 	system("pause");

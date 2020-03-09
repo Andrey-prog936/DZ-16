@@ -4,31 +4,43 @@
 #include <string>
 using namespace std;
 
-void addP(string name, string des, string day, string time, string vash)
+struct podia
+{
+	string name;
+	string des;
+	string day;
+	string time;
+	string vash;
+};
+podia zap;
+void addP(podia)
 {
 	cout << "Enter name: ";
-	cin >> name;
+	cin >> zap.name;
 	cout << "Enter description: ";
-	cin >> des;
+	cin >> zap.des;
 	cout << "Enter day: ";
-	cin >> day;
+	cin >> zap.day;
 	cout << "Enter time: ";
-	cin >> time;
+	cin >> zap.time;
 	cout << "Enter importance (1-3): ";
-	cin >> vash;
+	cin >> zap.vash;
+	
 }
 
-void Show(string name, string des, string day, string time, string vash)
+void Show(podia)
 {
 
-	cout << "Name: " << name << endl;
+	cout << "Name: " << zap.name<<endl;
 
-	cout << "Description: " << des << endl;
+	cout << "Description: " << zap.des << endl;
 
-	cout << "Day: " << day << endl;
+	cout << "Day: " << zap.day << endl;
 
-	cout << "Time: " << time << endl;
+	cout << "Time: " << zap.time << endl;
 
-	cout << "Importance: " << vash << endl;
+	cout << "Importance: " << zap.vash << endl;
+	
+
 
 }

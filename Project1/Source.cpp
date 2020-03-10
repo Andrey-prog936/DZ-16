@@ -3,13 +3,9 @@
 #include <windows.h>
 #include <ctime>
 #include "function.h"
+#include "coloring.h"
 
 using namespace std;
-HANDLE colr = GetStdHandle(STD_OUTPUT_HANDLE);
-#define DefCol SetConsoleTextAttribute(colr, FOREGROUND_BLUE | FOREGROUND_GREEN | FOREGROUND_RED);
-#define green SetConsoleTextAttribute(colr,FOREGROUND_GREEN);
-#define orange SetConsoleTextAttribute(colr,FOREGROUND_GREEN | FOREGROUND_RED);
-#define red SetConsoleTextAttribute(colr,FOREGROUND_RED);
 
 int main()
 {
@@ -18,21 +14,25 @@ int main()
 	int a = 0;
 	do
 	{
-		
+
 		cout << "\tMenu" << endl;
-		cout << "1 - Add podia" << endl; 
+		cout << "1 - Add podia" << endl;
 		cout << "2 - Show podii" << endl;
 		cout << "3 - FULL Exit ";
 		red
-		cout << "<-(WARNING)->" << endl;
-		DefCol
-		////////////////////////////
+			cout << "<-(WARNING)->" << endl << endl;
+		def
+			////////////////////////////
+			cout << "Select action: ";
 		cin >> a;
 		switch (a)
 		{
 		case 1:
 		{
+			cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" << endl;
 			addP(zap);
+			Sleep(600);
+			system("cls");
 		}
 		break;
 		case 2:
@@ -44,14 +44,15 @@ int main()
 		case 3:
 		{
 			Sleep(300);
+			delete[] SA;
 			return 1;
 		}
 		break;
-			default: {
-				cout << "Error 404" << endl;
-				break;
-				}
-			  
+		default: {
+			cout << "Error 404" << endl;
+			break;
+		}
+
 
 
 		}

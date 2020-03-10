@@ -23,5 +23,8 @@
     <ClInclude Include="function.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="coloring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

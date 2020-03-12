@@ -15,7 +15,7 @@ struct podia
 int i = 0;
 int te = 0;
 podia zap;
-size_t t = 200;
+int t = 200;
 string* SA = new string[t];
 void rek(string k, podia zap)
 {
@@ -103,5 +103,4 @@ void Show(podia)
 			cout << endl;
 		}
 	}
-
 }

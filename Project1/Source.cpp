@@ -18,18 +18,19 @@ int main()
 		cout << "\tMenu" << endl;
 		cout << "1 - Add podia" << endl;
 		cout << "2 - Show podii" << endl;
-		cout << "3 - FULL Exit ";
+		cout << "3 - Add category" << endl;
+		cout << "4 - FULL Exit ";
 		red
 			cout << "<-(WARNING)->" << endl << endl;
 		def
 			////////////////////////////
 			cout << "Select action: ";
 		cin >> a;
+		cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" << endl;
 		switch (a)
 		{
 		case 1:
 		{
-			cout << "=-=-=-=-=-=-=-=-=-=-=-=-=-=-=" << endl;
 			addP(zap);
 			Sleep(600);
 			system("cls");

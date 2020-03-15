@@ -1,7 +1,5 @@
 #include <iostream>
 #include <string>
-#include <windows.h>
-#include <ctime>
 #include "function.h"
 #include "coloring.h"
 

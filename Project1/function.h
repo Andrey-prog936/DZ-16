@@ -38,11 +38,12 @@ void rek(string k, podia zap)
 void addP(podia)
 {
 	cout << "Enter name: ";
-	cin >> zap.name;
+	cin.ignore();
+	getline(cin, zap.name);
 	SA[i] = zap.name;
 	i++;
 	cout << "Enter description: ";
-	cin >> zap.des;
+	getline(cin, zap.des);
 	SA[i] = zap.des;
 	i++;
 	cout << "Enter day: ";
